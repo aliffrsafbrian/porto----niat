@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #1E1F2B;
+    color: #fff;
+}
+
+header .header--container{
+    padding: 3rem 13rem;
+}
+
+header .header--container nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header--container nav a{
+    color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.header--container .header_main{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.header--container .header_cdas a{
+    padding: .7rem 2rem;
+    background-color: #2BA386;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/* Hero Style Start */
+.hero--section .hero--container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero--container .hero_textBox{
+    margin-left: 13rem;
+    width: 36%;
+}
+
+.hero--container .hero_img img{
+    margin-right: 9rem;
+}
+
+.hero_textBox .hero_title h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero_textBox .hero_title h1 span{
+    font-weight: 700;
+}
+
+.hero_textBox .hero_sub p{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+    margin: 2.6rem 0;
+}
+
+.hero_textBox .hero_btn{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 2.6rem;
+}
+
+.hero_textBox .hero_btn a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero_textBox .hero_btn:hover img{
+    transition: .3s;
+    transform: translateX(10px);
+}
+
+.hero_textBox .hero_btn:hover a{
+    text-decoration: underline;
+}
+
+.hero_textBox .hero_cdas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_cdas .hero_cdas-item p{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.hero_cdas .hero_cdas-item h1{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Hero Style End */
+
+
+/* Responsive */
+@media screen and (max-width: 410px) {
+    header .header--container{
+        padding: 24px;
+    }
+
+    header .header_main .header_menu{
+        display: none;
+    }
+
+    .header--container .header_cdas a{
+        padding: .6rem 1rem;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .hero--container .hero_textBox{
+        margin: 2rem 24px;
+        width: 100%;
+    }
+
+    .hero--container .hero_textBox h1{
+        font-size: 2rem;
+    }
+
+    .hero--container .hero_img img{
+        display: none;
+    }
+
+    .hero_cdas{
+        display: flex;
+    }
+
+    .hero_cdas .hero_cdas-item h1{
+        font-size: 18px;
+    }
+}
