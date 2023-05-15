@@ -121,7 +121,7 @@ header .header--container nav a{
 
 
 /* Responsive */
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 439px) {
     header .header--container{
         padding: 24px;
     }
