@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #1E1F2B;
+    color: #fff;
+}
+
+header .header--container{
+    padding: 3rem 13rem;
+}
+
+header .header--container nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header--container nav a{
+    color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.header--container .header_main{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.header--container .header_cdas a{
+    padding: .7rem 2rem;
+    background-color: #2BA386;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/* Over textBox Start */
+.overview--container{
+    display: flex;
+    margin: 0 13rem;
+}
+
+.overview--container .overview--textBox{
+    width: 42%;
+}
+
+.overview--textBox .over_title{
+    height: 140px;
+}
+
+.overview--textBox .over_title h1{
+    color: rgba(255, 255, 255, 0.03);
+    font-size: 100px;
+    position: absolute;
+    left: 9rem;
+}
+
+.overview--textBox .over_title h1::before{
+    content: 'Overview';
+    position: absolute;
+    font-size: 40px;
+    bottom: 1rem;
+    left: 4rem;
+    color: #fff;
+}
+
+.overview--textBox .over_sub{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+}
+/* Over textBox End */
+
+/* Over EDU Start */
+.over_edu{
+    margin: 2.4rem 0;
+}
+
+.over_edu h1{
+    margin: 1rem 0;
+}
+
+.over_edu .over_edu-list p{
+    font-weight: 400;
+    margin: 8px 0;
+    line-height: 22px;
+}
+
+.over_edu .over_edu-list p::before{
+    content: '	•';
+    margin-right: 10px;
+}
+/* Over EDU END */
+
+
+
+
+/* Responsive design start */
+@media screen and (max-width: 439px) {
+    header .header--container{
+        padding: 24px;
+    }
+
+    header .header_main .header_menu{
+        display: none;
+    }
+
+    .header--container .header_cdas a{
+        padding: .6rem 1rem;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .overview--container{
+        display: flex;
+        flex-direction: row;
+        margin: 24px;
+    }
+
+    .overview--container .overview--textBox{
+        width: 90%;
+    }
+
+    .overview--textBox .over_title{
+        height: 70px;
+        margin: 20px 0;
+    }
+
+    .overview--textBox .over_title h1{
+        left: 16px;
+        font-size: 62px;
+    }
+
+    .overview--textBox .over_title h1::before{
+        font-size: 28px;
+        left: 2rem;
+    }
+
+    .overview--textBox .over_sub{
+        font-size: 14px;
+    }
+}
+/* Responsive design END */
